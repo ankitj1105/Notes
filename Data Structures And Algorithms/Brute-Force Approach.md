@@ -68,7 +68,7 @@ for(int i =0;i<arr.length-1;i++){
   else{
    System.out.println("Not sorted");}
 ```
-# Two Sum(TC=)
+# Two Sum(TC=O(n^2))
 ```
 for(int i =0;i<arr.length;i++){
   for(int j =i+1;j<arr.length;j++){
@@ -76,4 +76,37 @@ for(int i =0;i<arr.length;i++){
       System.out.println(i +"" +j);
       }
 }}
+```
+# Remove Duplicates(TC=O(n^2))
+```
+for(int i =0;i<arr.length;i++){
+   for(int j =i+1;j<arr.length;j++){
+    if(arr[i]==arr[j]){
+      System.out.println(arr[i]);
+   }
+   }
+}
+```
+# Best Time To Buy And Sell Stock (TC=O(n^2)) 
+```
+int maxProfit =0
+for(int i =0;i<price.length;i++){
+  for(int j =i+1;j<price.length;j++){
+    int profit = price[j]-price[i];
+  
+  if(profit>maxProfit){
+    maxProfit =profit;
+  }
+}
+}
+System.out.println(maxProfit);
+```
+# Maximum Subarray(TC =O())
+```
+for(int i =0;i<arr.length;i++){
+  for(int j=i;j<arr.length;j++){
+    int sum =0;
+    for(int k =i;k<=j;k++)
+  }
+}
 ```
